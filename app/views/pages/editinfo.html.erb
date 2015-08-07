@@ -1,0 +1,30 @@
+<h1>Editing Information
+
+<form action="/myinfo/edit/edit">
+  <div>
+    <label for="grade">Grade</label><br />
+    <input id="grade" name="grade" value="<%= @stat.grade  %>" type="text" />
+  </div>
+  <div>
+    <label for="points">Points</label><br />
+    <input id="points" name="points" value="<%= @stat.points  %>" type="text" />
+  </div>
+    <div>
+    <label for="naqt_att">NAQT Tournaments Attended</label><br />
+    <input id="naqt_att" name="naqt_att" value="<%= @stat.naqt_att  %>" type="text" />
+  </div>
+    <div>
+    <label for="oac_att">OAC Tournaments Attended</label><br />
+    <input id="oac_att" name="oac_att" value="<%= @stat.oac_att %>" type="text" />
+  </div>
+    <div>
+    <label for="ract_att">Practices Attended</label><br />
+    <input id="ract_att" name="pract_att" value="<%= @stat.pract_att  %>" type="text" />
+  </div>
+  <div>
+    <input type="submit">
+  </div>
+  </h1>
+</form>
+
+

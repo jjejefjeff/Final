@@ -1,0 +1,33 @@
+<h1>User #<%= @user.id %>
+  <p></p>
+<div>
+  <strong>Username</strong>:<br />
+  <p><%= @user.username %></p>
+</div>
+
+<div>
+  <strong>Points</strong>:<br />
+  <p><%= @stat.points %></p>
+</div>
+
+<div>
+  <strong>NAQT Tournamnets Attended</strong>:<br />
+  <p class = "divstuff"><%= @stat.naqt_att %></p>
+</div>
+
+<div>
+  <strong>OAC Tournaments Attended</strong>:<br />
+  <p class = "divstuff"><%= @stat.oac_att %></p>
+</div>
+
+<div>
+  <strong>Practices Attended</strong>:<br />
+  <p class = "divstuff"><%= @stat.pract_att %></p>
+</div>
+
+</h1>
+
+
+<a href="/users/<%= @user.id %>/edit">Edit Account Info</a> |
+<a href="/myinfo/edit">Edit My Info</a> |
+<a href="/users/<%= @user.id %>/destroy">Destroy</a>

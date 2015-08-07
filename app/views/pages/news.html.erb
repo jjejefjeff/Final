@@ -1,0 +1,19 @@
+<h1><i><center>News</center></i></h1>
+<p> </p>
+<p> </p>
+<% @articles.each do |art| %>
+<div class = "container">
+    <div class = "row">
+      <div class="col-md-3">
+        <div style="background:rgba(0,255,255,0.1)" class="jumbotron">
+          <h2 class = "jumboheader"><u><%=art.title%></u></h2>
+          <p class = "jumbop"><%=art.body%></p>
+        </div>
+      </div>
+  </div>
+</div>
+
+<p></p>
+<p></p>
+<p></p>
+<% end %>

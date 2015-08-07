@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  grade: 1
+  points: 1
+  naqt_att: 1
+  oac_att: 1
+  pract_att: 1
+  dues_paid: false
+
+two:
+  grade: 1
+  points: 1
+  naqt_att: 1
+  oac_att: 1
+  pract_att: 1
+  dues_paid: false

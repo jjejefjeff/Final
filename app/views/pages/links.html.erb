@@ -1,0 +1,20 @@
+<h1><i><center>Important Links</center></i></h1>
+<p> </p>
+<p> </p>
+
+<% @links.each do |lin| %>
+<div class = "container">
+    <div class = "row">
+      <div class="col-md-3">
+        <div style="background:rgba(0,255,255,0.1)" class="jumbotron">
+          <h2 class = "jumboheader"><u><a href = "<%=lin.url%>"><%=lin.name%></a></u></h2>
+          <p class = "jumbop"><%=lin.description%></p>
+        </div>
+      </div>
+  </div>
+</div>
+
+<p></p>
+<p></p>
+<p></p>
+<% end %>

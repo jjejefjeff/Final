@@ -1,0 +1,175 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  background: linear-gradient(to bottom right, blue, yellow);
+}
+p {
+  color: white;
+}
+.jumboheader {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+}
+
+.jumbop{
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+}
+
+h1,h2,h3{
+  color: white;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555555;
+  background-color: #ffffff;
+}
+/* If uncommented, removes underlines from navbar */
+
+a {
+  color: #ee930f;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  color: #2EFE2E;
+  font-style: italic;
+}
+
+
+
+
+
+
+/* ***************************** */
+
+
+
+.list-inline > li {
+  display: inline-block;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+
+
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+.navbar-fixed-top,
+.navbar-fixed-bottom {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.navbar-fixed-top {
+  top: 0;
+  border-width: 0 0 1px;
+}
+
+
+
+
+/**/
+.navbar-toggle {
+  position: relative;
+  float: right;
+  margin-right: 15px;
+  padding: 9px 10px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+/**/
+.u-uppercase {
+  text-transform: uppercase;
+}
+.u-center {
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+}
+.u-lightweight {
+  font-weight: 300;
+}
+
+/**/
+
+
+.nav--primary {
+  float: right;
+  font-size: 16px;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+/*link base color is here. Secondary link is the transition color*/
+.nav--primary__link {
+  border-bottom: solid 5px transparent;
+  color: #ffffff;
+  display: block;
+  padding: 30px 25px 25px;
+  -webkit-transition: color 0.2s ease-in-out;
+  -o-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+}
+
+
+
+
+/* makes so stuff doesn't start until after navbar */
+body {
+  padding-top: 81px;
+}
+/* makes so that the background fills the back */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+
+.container .jumbotron {
+    border-radius: 6px;
+}

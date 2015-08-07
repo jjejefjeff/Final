@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AcWeb</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<header class="site__header navbar-fixed-top">
+    <div class="nav__contain">
+        <div class="container">
+
+            <div>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div>
+                <div class="collapse navbar-collapse">          
+    <ul class="list-inline nav--primary u-uppercase">
+		<li><a class="nav--primary__link" href="/home">Home</a>   
+            </li>
+		<li><a class="nav--primary__link" href="/about">About Us</a>   
+            </li>
+		<li><a class="nav--primary__link" href="/news">News</a>   
+            </li>
+      <% if session['user_id']%>
+		<li><a class="nav--primary__link" href="/myinfo">Account</a>
+      <% end %>
+            </li>
+		<li><a class="nav--primary__link" href="/links">Important Links</a>   
+            </li>
+		<li><a class="nav--primary__link" href="/improve">Improve</a>   
+            </li>
+    <% if session['user_id']%>
+      <li><a class="nav--primary__link" href="/sessions/destroy">Log Out</a>
+      </li>
+      <% else %>
+      <li><a class="nav--primary__link" href="/sessions/new">Login</a>
+      </li>
+     <!-- <li><a class="nav--primary__link" href="/new_user">Sign Up</a>   
+      </li>-->
+      <% end %>
+    </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+  <p></p>
+  
+<%= yield %>
+
+</body>
+</html>
