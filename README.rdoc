@@ -1,28 +1,8 @@
-== README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+1. New Academic Challenge (AC) club members wants to check how many points he scored during his first tournament. He clicks on his info to check how many points he scored
 
-Things you may want to cover:
+2. Old AC member wants to see how many tournament's he's gone to that aren't NAQT (not recorded online). He clicks on his tournament attendance to see how many he's gone to during each year of membership
 
-* Ruby version
+3. Harsha wants to join AC and needs to know about the club. However, he doesn't know any of the members or who the teacher is, and just wants a short rundown about how the club works. He hits up the website and learns about officers, formats, and is able to find extra links that can help him study.
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+^^ User Stories
